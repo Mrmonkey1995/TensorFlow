@@ -12,7 +12,8 @@ import tensorflow as tf
 
 
 # Feed
-input1 = tf.placeholder(tf.float32)
+# 创建占位符
+input1 = tf.compat.v1.placeholder(tf.float32)
 input2 = tf.compat.v1.placeholder(tf.float32)
 output = tf.multiply(input1, input2)
 with tf.compat.v1.Session() as session:
